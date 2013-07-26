@@ -1,0 +1,55 @@
+<head>
+  <title>app</title>
+</head>
+
+<body>
+<!-- NOTE: Empty body or no body -->
+</body>
+
+<!-- the layout is optional -->
+<template name="layout">
+  <aside>
+    {{yield 'sidebar'}}
+  </aside>
+
+  <nav>
+    <ul>
+      <li>
+        <a href="{{pathFor 'home'}}">Home</a>
+      </li>
+      <li>
+        <a href="{{pathFor 'about'}}">About</a>
+      </li>
+      <li>
+        <a href="{{pathFor 'post'}}">Post</a>
+      </li>
+    </ul>
+  </nav>
+
+  {{{yield}}}
+
+  <footer>
+    {{yield 'footer'}}
+  </footer>
+</template>
+
+<template name="home">
+  <h1>Home</h1>
+</template>
+
+<template name="post">
+  <h1>Post</h1>
+  {{title}}
+</template>
+
+<template name="about">
+  <h1>About</h1>
+</template>
+
+<template name="sidebar">
+  Sidebar
+</template>
+
+<template name="footer">
+  Footer
+</template>
