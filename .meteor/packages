@@ -8,3 +8,4 @@ insecure
 preserve-inputs
 iron-router
 coffeescript
+standard-app-packages
